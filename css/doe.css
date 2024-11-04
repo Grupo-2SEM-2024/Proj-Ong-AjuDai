@@ -1,0 +1,312 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos do body */
+body {
+    margin: 0;
+    font-family: "Belleza", sans-serif;
+}
+
+/* Estilos da Navbar */
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #ffffff;
+    padding: 10px 40px;
+    color: black;
+    border-bottom: 4px solid #000000;
+}
+
+.logo-img {
+    height: 80px;
+    width: 10rem;
+}
+
+.logo {
+    color: black;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; 
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    margin: 0; 
+}
+
+.nav-links a {
+    font-size: 28px;
+    font-family: "Belleza", sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px; 
+}
+
+.nav-links a:hover {
+    color: #F6C43E;
+}
+
+.btn {
+    font-size: 24px;
+    background-color: #F6C43E;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(158, 124, 11);
+    color: #ffffff;
+}
+
+.rastro {
+    border-bottom: 5px solid #F6C43E;
+    border-radius: 10px;
+}
+
+/* ______________________________________________________FIM NAVBAR_________________________________________________________________________ */
+
+/* ______________________________________________________COMEÇO MAIN_________________________________________________________________________ */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 2rem;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+}
+
+
+
+.coluna2 {
+    flex: 1; 
+    margin: 0 10px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.coluna2 h2 {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.coluna2 h3 {
+    font-size: 30px;
+}
+
+.fund {
+    width: 450px;
+    height: 450px;
+    background-color: #F6C43E;
+    border: 3px solid black;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center; 
+}
+
+.fund h4 {
+    font-size: 50px;
+    position: absolute;
+    top: -3.5rem; 
+    width: 100%; 
+    padding: 5px; 
+    text-align: center; 
+    box-sizing: border-box; 
+    border-radius: 5px; 
+}
+
+.fund h5, .fund h6, .fund p {
+    font-size: 30px;
+    padding-top: 1rem;
+    margin: 10px;
+}
+
+/* Estilo da linha */
+.line {
+    width: 50%; 
+    height: 2px; 
+    background-color: black; 
+    margin: 10px auto; 
+}
+
+.qrcode {
+    width: 300px; 
+    height: auto; 
+    margin: 20px 0; 
+    border-radius: 2rem;
+}
+
+/* ______________________________________________________FIM MAIN_________________________________________________________________________ */
+
+/*_____________________________________________ _______começo Rodape_______________________________________________________________________ */
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+    margin-top: 2rem;}
+
+.coluna3 {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.coluna h3 {
+    margin-top: 0; 
+}
+
+.insta {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* _________________________________________________Fim Rodape______________________________________________________________________ */
+
+/* Media Queries para responsividade */
+/* navbar-hamburg */
+.menu-toggle {
+    display: none; 
+    flex-direction: column-reverse;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: #F6C43E;
+    margin: 4px 0;
+}
+
+.navbar {
+    height: 90px; /* Ajusta a altura da navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajusta o espaçamento interno */
+    background-color: #ffffff; 
+}
+
+/* Fim navbar-hamburg */ 
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 1040px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #ffffff;
+        position: absolute; 
+        top: 83px; 
+        left: 0;
+        z-index: 999;
+    }
+    
+    .nav-links.active {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .menu-toggle {
+        display: flex; 
+    }
+
+    .navbar {
+        flex-direction: row; 
+        height: 80px; 
+    }
+    
+    .container, .container2 {
+        flex-direction: column; 
+        padding: 8px;
+        margin: 0.5rem ;
+    }
+
+   
+    
+    /* Estilo dos links de navegação */
+    .nav-links a {
+        padding: 15px 20px; 
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        display: block; 
+    }
+
+    .rastro {
+        border-bottom: 5px solid #F6C43E;
+        border-radius: 10px;
+        width: 30%; 
+        margin-left: 38%;
+        display: block;
+    }
+
+    .fund {
+        width: 300px;
+        height: 300px;
+        background-color: #F6C43E;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding-top: 20px; 
+    }
+    .fund h4 {
+        font-size: 30px;
+        position: absolute;
+        top: -1.5rem; 
+        width: 90%; 
+        padding: 0; 
+        text-align: center; 
+        box-sizing: border-box; 
+        border-radius: 5px; 
+    }
+    
+    .qrcode {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .fund h5, .fund h6, .fund p {
+        font-size: 20px; 
+    }
+
+    .fund {
+        padding: 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 20px; 
+        padding: 8px 12px; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}

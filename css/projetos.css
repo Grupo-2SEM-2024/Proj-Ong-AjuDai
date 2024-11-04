@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Belleza", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #ffffff;
+    padding: 10px 40px;
+    color: black;
+    border-bottom: 4px solid #000000
+}
+.logo-img{
+    height: 80px;
+    width: 10rem;
+}
+.logo {
+    color: black;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; 
+    flex-grow: 1; 
+}
+
+
+
+.nav-links li {
+    margin: 0; 
+}
+
+.nav-links a {
+    font-size: 28px;
+    font-family: "Belleza", sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px; 
+}
+
+.nav-links a:hover {
+   color: #F6C43E;
+   transition: all 0.4s;
+}
+
+.btn {
+    font-size: 24px;
+    background-color: #F6C43E ;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(158, 124, 11);
+    color: #ffffff;
+}
+
+.rastro{
+    border-bottom: 5px solid #F6C43E;
+    border-radius: 10px
+}
+
+
+/* ______________________________________________________FIM NAVBAR_________________________________________________________________________ */
+
+
+
+/* ______________________________________________________COMEÇO MAIN_________________________________________________________________________ */
+
+.container{
+    display: flex; 
+    justify-content: space-between; 
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), #f6c53e50);
+    padding: 15px;
+    border-bottom: 4px solid #000000
+}
+
+
+.coluna2 {
+    flex: 1; 
+    margin: 0 10px; 
+    display: flex; 
+    justify-content:center;
+    align-items: center; 
+}
+
+.coluna2 h2{
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+
+.coluna2 h3{
+    font-size: 30px;
+    
+}
+
+.container2{
+    display: flex; 
+    justify-content: space-between; 
+    flex-direction:row-reverse;
+    background: linear-gradient(45deg, #F6C43E,white,#F6C43E);
+    padding: 15px;
+    border-bottom: 4px solid #000000
+}
+
+
+/* ______________________________________________________FIM MAIN_________________________________________________________________________ */
+
+
+
+
+/*_____________________________________________ _______começo Rodape_______________________________________________________________________ */
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+}
+
+.coluna {
+    flex: 1; 
+    margin: 0 10px; 
+}
+.coluna3 {
+    flex: 1; 
+    margin: 0 10px; 
+}
+.coluna h3 {
+    margin-top: 0; 
+}
+
+.insta{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* _________________________________________________Fim Rodape______________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+/* Media Queries para responsividade */
+/* navbar-hamburg */
+.menu-toggle {
+    display: none;
+    flex-direction:column-reverse;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: #F6C43E;
+    margin: 4px 0;
+}
+.navbar {
+    height: 90px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; 
+    background-color: #ffffff; 
+}
+
+/* fim navbar-hamburg */ 
+
+
+/* Estilos responsivos 
+telas menores */
+@media (max-width: 1040px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #ffffff; 
+        position: absolute; 
+        top: 83px; 
+        left: 0;
+    }
+    
+    .nav-links.active {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .menu-toggle {
+        display: flex; 
+    }
+
+    .navbar {
+        flex-direction: row; 
+        height: 80px; 
+    }
+    
+    .container, .container2 {
+        flex-direction: column; 
+        padding: 8px; 
+    }
+    
+/* Estilo dos links de navegação */
+.nav-links a {
+    padding: 15px 20px; 
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    display: block; 
+}
+
+.rastro {
+    border-bottom: 5px solid #F6C43E;
+    border-radius: 10px;
+    width: 30%; 
+    margin-left: 38%; 
+    display: block;
+}
+
+}
+@media (max-width: 768px) {
+    .btn {
+        font-size: 20px; 
+        padding: 8px 12px; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+   
+   
+}
